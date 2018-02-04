@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class IpTest {
   private static final String URL = "http://ip.jsontest.com/";
-  @Test
+  @Test(groups = "ip")
   public void checkErrorStatusForURLs() {
     get(URL).then().statusCode(CoreMatchers.equalTo(200));
   }
