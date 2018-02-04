@@ -13,10 +13,7 @@ public class IpTest {
   @Test(groups = {"functional","ip"})
   @Epic(value = "Strategic")
   @Feature(value = "Accumulation")
-  @Step(value = ""+
-      "Given request\n" +
-      "When request\n" +
-      "Then asdasd\n")
+  @Step(value = "Given service is up")
   public void checkErrorStatusForURLs() {
     get(URL).then().statusCode(CoreMatchers.equalTo(200));
   }
